@@ -61,14 +61,16 @@ public class MainActivity extends AppCompatActivity {
                     int day = dp.getDayOfMonth();
                     int month = dp.getMonth() + 1 ;
                     int year = dp.getYear();
+                    String names = name.getText().toString();
+
 
                     String message = " ";
-                    message += "Name : " + name;
-                    message += "Mobile number : " + mobile;
-                    message += "Group Size : " + group;
+                    message += "Name : " + names;
+                    message += "Mobile number : " + number;
+                    message += "Group Size : " + peoples;
                     message += "Seating Area : Smoking ";
                     message += "Date : " + day + "/" + month + "/" + year;
-                    message += "Time : " + tp.getCurrentHour() + tp.getCurrentMinute();
+                    message += "Time : " + tp.getCurrentHour() + ":" + tp.getCurrentMinute();
 
                     Toast.makeText(MainActivity.this, message , Toast.LENGTH_LONG).show();
 
@@ -86,12 +88,13 @@ public class MainActivity extends AppCompatActivity {
                     int day = dp.getDayOfMonth();
                     int month = dp.getMonth() + 1 ;
                     int year = dp.getYear();
+                    String names = name.getText().toString();
 
 
                     String message = " ";
-                    message += "Name : " + name;
-                    message += "Mobile number : " + mobile;
-                    message += "Group Size : " + group;
+                    message += "Name : " + names;
+                    message += "Mobile number : " + number;
+                    message += "Group Size : " + peoples;
                     message += "Seating Area : Non-Smoking ";
                     message += "Date : " + day + "/" + month + "/" + year;
                     message += "Time : " + tp.getCurrentHour() + tp.getCurrentMinute();
@@ -111,22 +114,19 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                int month = dp.getMonth() + 1 ;
-
 
                 tp.setCurrentHour(12);
                 tp.setCurrentMinute(0);
-                dp.updateDate(2020,6,1);
+                dp.updateDate(2020,5,1);
+                name.setText(" ");
+                mobile.setText(" ");
+                group.setText(" ");
+                confirmed.setChecked(false);
 
 
 
             }
         });
-
-
-
-
-
 
 
 

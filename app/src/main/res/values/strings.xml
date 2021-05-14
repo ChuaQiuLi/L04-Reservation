@@ -12,4 +12,5 @@
     <string name="select_a_place_to_seat">Select a place to seat:</string>
     <string name="non_smoking_area">Non Smoking Area</string>
     <string name="smoking_area">Smoking Area</string>
+    <string name="choose_a_seat_location">Choose a seat location</string>
 </resources>

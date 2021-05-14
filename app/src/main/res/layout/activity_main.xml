@@ -83,7 +83,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/select_a_place_to_seat"
+        android:text="@string/choose_a_seat_location"
         android:textColor="#0E0E0E" />
 
     <RadioGroup
@@ -107,6 +107,13 @@
             android:text="@string/non_smoking_area" />
 
     </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Booking Date and Time :"
+        android:textColor="#252424" />
 
     <LinearLayout
         android:layout_width="match_parent"
